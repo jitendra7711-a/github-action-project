@@ -1,0 +1,8 @@
+Create an S3 bucket and configure static hosting
+Create a new repository in your GitHub account
+click on settings --> Select Secrets and Variables from settings, and select Actions
+Select New repository secret.
+Enter AWS_ACCESS_KEY_ID 
+Enter AWS_SECRET_ACCESS_KEY
+check the file is running on github
+then go to s3 
