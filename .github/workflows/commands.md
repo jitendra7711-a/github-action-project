@@ -12,6 +12,7 @@
         }
     ]
 }
+```
 ### Go to properties and configure static hosting --> enable it --> in index document give name index.html
 ### Create a new repository in your GitHub account  
 ###click on settings --> Select Secrets and Variables from settings, and select Actions
@@ -112,5 +113,5 @@ and then make a new file in the repo  --> index.html paste the code in that file
     </footer>
 </body>
 </html>
-
+```
 ### then go to s3 properties and click on static hosting url and run it
