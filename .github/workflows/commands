@@ -1,5 +1,19 @@
-Create an S3 bucket and configure static hosting
-Create a new repository in your GitHub account
+### Create an S3 bucket and go to permission in the bucket policy paste the code 
+```yml
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::gitbucket-static/*"   (change the bucket name here)
+        }
+    ]
+}
+### Go to properties and configure static hosting --> enable it --> in index document give name index.html
+### Create a new repository in your GitHub account
 click on settings --> Select Secrets and Variables from settings, and select Actions
 Select New repository secret.
 Enter AWS_ACCESS_KEY_ID 
